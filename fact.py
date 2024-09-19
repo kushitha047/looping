@@ -11,15 +11,11 @@ Sample Output:
 Yes
 ***
 import math
-
 def is_factorial_number(n):
     if n < 1:
         return "No"
-    
-    # Start with factorial of 1
     factorial = 1
     i = 1
-    
     while factorial < n:
         i += 1
         factorial *= i
@@ -28,9 +24,5 @@ def is_factorial_number(n):
         return "Yes"
     else:
         return "No"
-
-# Read the input
 n = int(input())
-
-# Determine and print the result
 print(is_factorial_number(n), "program")
