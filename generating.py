@@ -33,18 +33,10 @@ def generate_collatz_sequence(n):
             n = 3 * n + 1
         steps += 1
         
-    sequence.append(1)  # Finally add 1 to the sequence
+    sequence.append(1)  
     return sequence, steps
-
-# Read the input
 n = int(input())
-
-# Generate the Collatz sequence and step count
 sequence, steps = generate_collatz_sequence(n)
-
-# Print the sequence
 for number in sequence:
     print(number)
-
-# Print the number of steps followed by "program"
 print(steps, "program")
