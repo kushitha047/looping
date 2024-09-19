@@ -11,18 +11,10 @@ Sample Output:
 Trendy Number
 ***
 def is_trendy_number(n):
-    # Check if the number has exactly 3 digits
     if 100 <= n <= 999:
-        # Extract the middle digit
         middle_digit = (n // 10) % 10
-        # Check if the middle digit is divisible by 3
         if middle_digit % 3 == 0:
             return "Trendy Number"
-    
     return "Not a Trendy Number"
-
-# Read the input
 n = int(input())
-
-# Check and print whether the number is trendy
 print(is_trendy_number(n), "program")
